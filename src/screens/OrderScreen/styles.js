@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const windowWidth = Dimensions.get('window').width;
 
 export default StyleSheet.create({
   container: {
@@ -8,7 +10,7 @@ export default StyleSheet.create({
     flex: 1,
   },
   signName: {
-    fontSize: 16,
+    fontSize: windowWidth * 0.04,
     color: 'black',
     fontWeight: 'bold',
     marginBottom: 5,
@@ -17,36 +19,36 @@ export default StyleSheet.create({
     color: 'black',
   },
   circleImage: {
-    width: 70,
-    height: 70,
-    borderRadius: 45,
-    marginRight: 10,
+    width: windowWidth * 0.2,
+    height: windowWidth * 0.2,
+    borderRadius: (windowWidth * 0.2) / 2, 
+    marginRight: windowWidth * 0.03,
   },
   errorText: {
     color: 'red',
-    fontSize: 18,
+    fontSize: windowWidth * 0.05,
     textAlign: 'center',
-    marginTop: 20,
+    marginTop: windowWidth * 0.08,
   },
   cardVertical: {
     flexDirection: 'row',
-    padding: 10,
+    paddingVertical: windowWidth * 0.02,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },
   cardHorizontal: {
-    padding: 10,
-    width:380,
-    marginHorizontal:10,
+    paddingVertical: windowWidth * 0.02,
+    width: windowWidth * 0.95,
+    marginHorizontal: windowWidth * 0.025,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },
   media: {
     width: '20%',
-    marginRight: 10,
-    height: 70,
+    marginRight: windowWidth * 0.03,
+    height: windowWidth * 0.2,
     overflow: 'hidden',
-    borderRadius: 300,
+    borderRadius: (windowWidth * 0.2) / 2,
   },
   highlightedBackground: {
     backgroundColor: '#e3e4e5',
