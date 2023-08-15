@@ -14,6 +14,7 @@ const OrderScreen = () => {
   const [sortedBy, setSortedBy] = useState(null);
   const [error, setError] = useState(null);
   const [scrollType, setScrollType] = useState('vertical');
+  const [showVideo, setShowVideo] = useState(true);
 
   useEffect(() => {
     fetchHoroscopes();
@@ -30,7 +31,9 @@ const OrderScreen = () => {
       let data = [];
       if (sortedBy === 'name') {
         data = await getHoroscopesAlphabetically();
+        setShowVideo(false);
       } else if (sortedBy === 'date') { 
+        setShowVideo(false);
         data = horoscopeData.slice();
         data.sort((a, b) => {
           const dateA = new Date(a.init_date.split('-').reverse().join('-'));
@@ -70,7 +73,7 @@ const OrderScreen = () => {
       scrollType === 'horizontal' ? styles.cardHorizontal : styles.cardVertical,
       index === 0 && styles.highlightedBackground,
     ]}>
-      {index === 0 ? (
+      {index === 0 && showVideo ? (
         <>
           <Video
           source={{ uri: `${API_BASE_URL}/highlighted.mp4` }}
