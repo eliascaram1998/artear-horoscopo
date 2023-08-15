@@ -48,5 +48,7 @@ Durante el desarrollo de esta aplicación, se tomaron las siguientes asunciones:
 - Se asume que los íconos utilizados en la aplicación estarán disponibles y funcionarán correctamente con React Native Vector Icons.
 - Se asume que el almacenamiento local proporcionado por AsyncStorage estará disponible y funcionará correctamente.
 - Se asume que las pruebas unitarias y de componente seguirán siendo efectivas y relevantes a medida que la aplicación evolucione.
+## APK
+La APK esta ubicada en el directorio raiz dentro de la carpeta apk, ahí se encuentra el instalador para android. La Ip del servidor esta configurada como 192.168.0.5, si no esta conectada a esa IP no se podrá conectar al servidor y no mostrara información, solo mostrara el esqueleto de la aplicación
 ## Contacto
 Linkedin: https://www.linkedin.com/in/elias-alejandro-c-a66805184/
