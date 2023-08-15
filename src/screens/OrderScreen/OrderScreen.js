@@ -40,7 +40,6 @@ const OrderScreen = () => {
           const dateB = new Date(b.init_date.split('-').reverse().join('-'));
           return dateA - dateB;
         });
-        console.log(data)
       } else {
         data = await getHoroscopes(sortedBy);
       }
