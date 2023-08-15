@@ -36,3 +36,17 @@ npm test
 - AsyncStorage
 - Jest (para pruebas unitarias)
 - React Testing Library (para pruebas de componentes)
+## Asumpciones
+
+Durante el desarrollo de esta aplicación, se tomaron las siguientes asunciones:
+
+- Se asume que la API proporcionada está disponible y en funcionamiento durante la ejecución de la aplicación.
+- Se asume que la API requiere el encabezado "Authorization" con el valor "qazwsx" para realizar peticiones exitosas.
+- Se asume que los datos proporcionados por la API seguirán el formato especificado en la documentación.
+- Se asume que la aplicación se ejecutará en emuladores o dispositivos con capacidades compatibles con React Native y las bibliotecas utilizadas.
+- Se asume que las rutas y endpoints de la API no cambiarán durante el desarrollo de la aplicación.
+- Se asume que los íconos utilizados en la aplicación estarán disponibles y funcionarán correctamente con React Native Vector Icons.
+- Se asume que el almacenamiento local proporcionado por AsyncStorage estará disponible y funcionará correctamente.
+- Se asume que las pruebas unitarias y de componente seguirán siendo efectivas y relevantes a medida que la aplicación evolucione.
+## Contacto
+Linkedin: https://www.linkedin.com/in/elias-alejandro-c-a66805184/
